@@ -37,6 +37,70 @@ class McpFDKGateway(IMcpFDKGateway):
             self.resources[route] = func
             return func
         return decorator
+        
+    def get_id(self) -> str:
+        catalog = load_catalog()
+        return catalog.get("id")
+        
+    def get_name(self) -> str:
+        catalog = load_catalog()
+        return catalog.get("name")
+        
+    def get_domain_name(self) -> str:
+        catalog = load_catalog()
+        return catalog.get("domainName")
+        
+    def get_description(self) -> str:
+        catalog = load_catalog()
+        return catalog.get("description")
+        
+    def get_structured_description(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("structuredDescription")
+        
+    def get_image_id(self) -> str:
+        catalog = load_catalog()
+        return catalog.get("imageId")
+        
+    def get_creation_timestamp(self) -> str:
+        catalog = load_catalog()
+        return catalog.get("creationTimestamp")
+        
+    def get_component_relationships(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("componentRelationships")
+        
+    def get_assembly_relationships(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("assemblyRelationships")
+        
+    def get_release_history(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("releaseHistory")
+        
+    def get_sia_phase_scopes(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("siaPhaseScopes")
+        
+    def get_ifc_assignments(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("ifcAssignments")
+        
+    def get_ebkp_concepts(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("ebkpConcepts")
+        
+    def get_domain_models(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("domainModels")
+        
+    def get_property_sets(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("propertySets")
+        
+    def get_referenced_enumerations(self) -> list:
+        catalog = load_catalog()
+        return catalog.get("referencedEnumerations")
 
 mcp = McpFDKGateway()
 
