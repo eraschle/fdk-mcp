@@ -1,0 +1,502 @@
+{
+    "id": "OBJ_FB_2",
+    "name": "Weichenrost",
+    "domainName": "Fahrbahn",
+    "description": "Der Weichenrost ist wie der Gleisrost ist eine funktionale Sicht, die sich aus Objekttypen der Fahrschiene, der Schienenbefestigung und der Schwellen zusammensetzt. Zusätzlich sind beim Weichenrost auch spezifische Weichen-Objekte wie Herzstücke, Radlenker, Zungenvorrichtungen etc eingeschlossen. \r\nEine Eigenschaft des Weichenrostes ist, dass die Bauteile fix zusammengefügt und in sich nicht beweglich sind. Oft wird ein «Weichenrost» sogar als gesamte Einheit angeliefert und eingebaut.\r\nDer Weichenrost folgt der Linienführung im 3-Dimensionalen Raum. Er wird eindeutig durch die Gleisachse und deren Ausprägungen definiert. Sie verläuft mittig zwischen den Oberkannten der Fahrschiene (SiOK). Der Weichenrost hat somit Kennwerte bezüglich horizontaler und vertikaler Linienführung und trägt auch die Informationen bezüglich Überhöhung.\r\nIn den Prozessen wird der Weichenrost oft als Einheit betrachtet. Einerseits bei der Planung in Projekten aus toplogischer Sicht, andererseits auch bei zahlreichen Massnahmen der Oberbauerneuerung.\r\nDer Weichenrost hat ein inneres Bezugssystem, das im «Verlegeplan» dokumentiert ist.\r\nDie gesamte Bahnanlage ist definiert durch eine der Topologie und der Linienführung folgende, lückenlose Aneinanderreihung von Gleis- und Weichenrosten.",
+    "structuredDescription": [
+        {
+            "type": "paragraph",
+            "content": "Der Weichenrost ist wie der Gleisrost ist eine funktionale Sicht, die sich aus Objekttypen der Fahrschiene, der Schienenbefestigung und der Schwellen zusammensetzt. Zusätzlich sind beim Weichenrost auch spezifische Weichen-Objekte wie Herzstücke, Radlenker, Zungenvorrichtungen etc eingeschlossen."
+        },
+        {
+            "type": "paragraph",
+            "content": "Die gesamte Bahnanlage ist definiert durch eine der Topologie und der Linienführung folgende, lückenlose Aneinanderreihung von Gleis- und Weichenrosten."
+        }
+    ],
+    "imageId": "f7e4724d-6471-4e99-83e9-cbbb3849f057",
+    "creationTimestamp": "2025-01-31T10:09:22.132Z",
+    "componentRelationships": [
+        {
+            "id": "OBJ_FB_25",
+            "name": "Hohlschwelle"
+        },
+        {
+            "id": "OBJ_FB_15",
+            "name": "Schienenstoss isoliert mit Lasche"
+        }
+    ],
+    "assemblyRelationships": [],
+    "releaseHistory": [
+        {
+            "versionId": "13.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "15.0.0",
+            "isIncluded": true
+        }
+    ],
+    "siaPhaseScopes": [
+        {
+            "phaseRange": "21",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "53",
+            "isInScope": true
+        }
+    ],
+    "ifcAssignments": [
+        {
+            "version": "IFC2x3",
+            "ifcClass": "IfcElementAssembly",
+            "ifcType": "",
+            "ifcPredefinedType": "USERDEFINED"
+        }
+    ],
+    "ebkpConcepts": [
+        {
+            "id": "n.a.",
+            "name": "not applicable"
+        }
+    ],
+    "domainModels": [
+        {
+            "id": "RWT",
+            "name": "Fahrbahn"
+        }
+    ],
+    "propertySets": [
+        {
+            "id": "PST_459009",
+            "name": "OBJ_FB_2_LO",
+            "properties": [
+                {
+                    "id": "PTY_380310",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Kurvenerweiterung in Bogenweichen",
+                    "unit": "",
+                    "description": "Falls Weichenrost gebogen --> Kurvenerweiterung im Hauptstrang",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380313",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_458991",
+                        "name": "Weichen-Orientierung"
+                    },
+                    "name": "Orientierung",
+                    "unit": "",
+                    "description": "Stumpf oder spitz in Bezug zur Richtung der Gleiskante",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380314",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Reference"
+                    },
+                    "name": "Weichenreferenzpunkt",
+                    "unit": "",
+                    "description": "Referenzpunkt des Weichenrostes für die Referenzierung zum Installationsplan",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459014",
+            "name": "OBJ_FB_2_PO",
+            "properties": [
+                {
+                    "id": "PTY_380322",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_458977",
+                        "name": "Überwucherungs-Typ"
+                    },
+                    "name": "Typ der Überwucherung",
+                    "unit": "",
+                    "description": "Überwucherung, welche den Weichenrost überdeckt. Bsp.: Dreck, Sand, Gras, Büsche, Bäume, Steine",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459016",
+            "name": "OBJ_FB_2_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_380324",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_458994",
+                        "name": "Weichenfunktions-Typ"
+                    },
+                    "name": "Funktion der Weiche",
+                    "unit": "",
+                    "description": "Auf Haupt- oder Nebengleis installiert. Angabe nur für Weichenrost notwendig",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380325",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_458992",
+                        "name": "Weichenart"
+                    },
+                    "name": "Weichenart",
+                    "unit": "",
+                    "description": "Art der Weiche",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380333",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_458995",
+                        "name": "Weichenheizung"
+                    },
+                    "name": "Weichenheizung",
+                    "unit": "",
+                    "description": "Welche Art Weichenheizung ist installiert (Elektrisch, Gas, keine)",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459210",
+            "name": "SBB-CFF-FFS_LO",
+            "properties": [
+                {
+                    "id": "PTY_380660",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "eBKP-Position",
+                    "unit": "",
+                    "description": "eBKP-Position des Objekttypen bis auf die zweite Stufe des eBKP (eBKP-Element)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_417692",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Die Bezeichnung des Anlagenobjektes wird durch die Anlagengattungen definiert und soll automatisiert erfolgen.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459211",
+            "name": "SBB-CFF-FFS_PO",
+            "properties": [
+                {
+                    "id": "PTY_380662",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Charge",
+                    "unit": "",
+                    "description": "Die Chargennummer liefert weitere Informationen zur Charge und wird für die durchgehende Rückverfolgbarkeit benötigt._x000D_\r\nCharge wird über den Hersteller bereitgestellt",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380668",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Genauigkeit der Verortung",
+                    "unit": "cm",
+                    "description": "Maximale Abweichung der geografischen Lage oder der Ausdehnung des physischen Anlagenobjekts gegenüber der Realität in Zentimeter.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459212",
+            "name": "SBB-CFF-FFS_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_380669",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "SBB-Artikelnummer",
+                    "unit": "",
+                    "description": "ID zum Materialstammsatz (SBB intern) / darf Wert \"NA\" enthalten",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459213",
+            "name": "SBB-CFF-FFS",
+            "properties": [
+                {
+                    "id": "PTY_380678",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeID",
+                    "unit": "",
+                    "description": "Objekttyp ID gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380680",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459214",
+                        "name": "ObjectStatusProject"
+                    },
+                    "name": "ObjectStatusProject",
+                    "unit": "",
+                    "description": "Objektstatus des Objekttypen im Projekt",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459215",
+            "name": "SBB-CFF-FFS_Lineare-Gleistrassierung",
+            "properties": [
+                {
+                    "id": "PTY_380686",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anfang_Gleiskante-ID",
+                    "unit": "",
+                    "description": "Gleiskante = Gleisachse\r\nDie Gleiskante-ID ist die Bezeichnung der jeweiligen Gleiskante (Gleisachse). Sie wird als Grundlage für das Projekt geliefert.\r\n\r\nBezeichnungsschema: BAA 78.Left > LITT 41.Right",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380687",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Anfang_Stationierung",
+                    "unit": "m",
+                    "description": "Angabe des Stationierungswertes auf der Gleiskante (Gleisachse) in \"m\".\r\nDer Stationierungswert ist mit einer Genauigkeit von vier Nachkommastellen anzugeben.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380688",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Ende_Gleiskante-ID",
+                    "unit": "",
+                    "description": "Gleiskante = Gleisachse_x000D_\r\nDie Gleiskante-ID ist die Bezeichnung der jeweiligen Gleiskante (Gleisachse). Sie wird als Grundlage für das Projekt geliefert._x000D_\r\n_x000D_\r\nBezeichnungsschema: BAA 78.Left > LITT 41.Right_x000D_\r\nDer Wert kann identisch mit dem Wert von \"Anfang_Gleiskante-ID\" sein.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380689",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Ende_Stationierung",
+                    "unit": "m",
+                    "description": "Angabe des Stationierungswertes auf der Gleiskante (Gleisachse) in \"m\".\r\nDer Stationierungswert ist mit einer Genauigkeit von vier Nachkommastellen anzugeben.\r\nDer Wert kann identisch mit Wert in \"Anfang_Stationierung\" sein.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380690",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anfang_Strecke-ID",
+                    "unit": "",
+                    "description": "Strecke = Linie_x000D_\r\nDie Strecke-ID ist die Bezeichnung der jeweiligen Strecke (Linie). Sie wird als Grundlage für das Projekt geliefert._x000D_\r\nBezeichnungsschema: BAA - BAAN",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380691",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Ende_Strecke-ID",
+                    "unit": "",
+                    "description": "Strecke = Linie_x000D_\r\nDie Strecke-ID ist die Bezeichnung der jeweiligen Strecke (Linie). Sie wird als Grundlage für das Projekt geliefert._x000D_\r\nBezeichnungsschema: BAA - BAAN_x000D_\r\nDer Wert kann identisch mit dem Wert von \"Anfang_Strecke-ID\" sein.",
+                    "example": ""
+                }
+            ]
+        }
+    ],
+    "referencedEnumerations": [
+        {
+            "id": "ENM_458991",
+            "name": "Weichen-Orientierung",
+            "values": [
+                {
+                    "designation": "back",
+                    "description": ""
+                },
+                {
+                    "designation": "front",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_458977",
+            "name": "Überwucherungs-Typ",
+            "values": [
+                {
+                    "designation": "Dreck",
+                    "description": ""
+                },
+                {
+                    "designation": "Gebüsch",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_458994",
+            "name": "Weichenfunktions-Typ",
+            "values": [
+                {
+                    "designation": "Hauptgleis",
+                    "description": ""
+                },
+                {
+                    "designation": "Nebengleis",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_458992",
+            "name": "Weichenart",
+            "values": [
+                {
+                    "designation": "einfache Kreuzungsweiche",
+                    "description": ""
+                },
+                {
+                    "designation": "Entgleisungsvorrichtung",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_458996",
+            "name": "Weichenkatalog",
+            "values": [
+                {
+                    "designation": "Nicht definiert",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_458921",
+            "name": "Gleiskategorie",
+            "values": []
+        },
+        {
+            "id": "ENM_458916",
+            "name": "Gebogene Weichen-Typ",
+            "values": [
+                {
+                    "designation": "Nein",
+                    "description": ""
+                },
+                {
+                    "designation": "Ja. Klothoïde",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_458894",
+            "name": "Abzweigrichtungs-Typ",
+            "values": [
+                {
+                    "designation": "symmetrisch",
+                    "description": ""
+                },
+                {
+                    "designation": "Links-Links",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_458895",
+            "name": "Antriebs-Typ",
+            "values": [
+                {
+                    "designation": "gemischt",
+                    "description": ""
+                },
+                {
+                    "designation": "motorisiert",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_458995",
+            "name": "Weichenheizung",
+            "values": [
+                {
+                    "designation": "geothermisch",
+                    "description": ""
+                },
+                {
+                    "designation": "keine",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459214",
+            "name": "ObjectStatusProject",
+            "values": [
+                {
+                    "designation": "Temporär",
+                    "description": ""
+                },
+                {
+                    "designation": "Modifiziert",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}
