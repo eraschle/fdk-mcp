@@ -1,19 +1,19 @@
 # FDK MCP Server
 
-Ein MCP (Model Context Protocol) Server für den Zugriff auf FDK (Fach-Daten-Katalog) Objekte der SBB.
+Ein MCP (Model Context Protocol) Server fÃ¼r den Zugriff auf FDK (Fach-Daten-Katalog) Objekte der SBB.
 
-## Übersicht
+## Ãœbersicht
 
-Dieser MCP Server ermöglicht AI-Systemen den strukturierten Zugriff auf FDK-Daten sowohl aus lokalen JSON-Dateien als auch über die SBB FDK API. Er bietet umfassende Funktionen für das Suchen, Analysieren und Verwalten von FDK-Objekten.
+Dieser MCP Server ermÃ¶glicht AI-Systemen den strukturierten Zugriff auf FDK-Daten sowohl aus lokalen JSON-Dateien als auch Ã¼ber die SBB FDK API. Er bietet umfassende Funktionen fÃ¼r das Suchen, Analysieren und Verwalten von FDK-Objekten.
 
 ## Features
 
-- **Lokale JSON-Datei Unterstützung**: Lädt FDK-Objekte aus lokalen JSON-Dateien
-- **API Fallback**: Optionaler Zugriff auf die SBB FDK API für fehlende Objekte
+- **Lokale JSON-Datei UnterstÃ¼tzung**: LÃ¤dt FDK-Objekte aus lokalen JSON-Dateien
+- **API Fallback**: Optionaler Zugriff auf die SBB FDK API fÃ¼r fehlende Objekte
 - **Referenz-Analyse**: Analysiert Beziehungen zwischen FDK-Objekten
 - **Flexible Suche**: Suche nach Name, Domain, Objekttyp
-- **Caching**: Intelligentes Caching für API-Anfragen
-- **Acht MCP Tools** für verschiedene Anwendungsfälle
+- **Caching**: Intelligentes Caching fÃ¼r API-Anfragen
+- **Acht MCP Tools** fÃ¼r verschiedene AnwendungsfÃ¤lle
 
 ## Installation
 
@@ -22,14 +22,14 @@ Dieser MCP Server ermöglicht AI-Systemen den strukturierten Zugriff auf FDK-Date
 git clone <repository-url>
 cd fdk_mcp
 
-# Installation der Abhängigkeiten mit UV
+# Installation der AbhÃ¤ngigkeiten mit UV
 uv sync
 
 # Test der Installation
 uv run python test_server.py
 ```
 
-## Verfügbare MCP Tools
+## VerfÃ¼gbare MCP Tools
 
 ### 1. `get_fdk_object`
 Ruft ein spezifisches FDK-Objekt anhand seiner ID ab.
@@ -62,7 +62,7 @@ Extrahiert die FDK-Objekt-ID aus einem Dateinamen.
 ```
 
 ### 4. `analyze_references`
-Analysiert Referenz-Beziehungen für ein FDK-Objekt.
+Analysiert Referenz-Beziehungen fÃ¼r ein FDK-Objekt.
 
 ```json
 {
@@ -82,13 +82,13 @@ Erstellt ein Netzwerk von Referenz-Beziehungen.
 ```
 
 ### 6. `get_domains`
-Gibt alle verfügbaren FDK-Domains zurück.
+Gibt alle verfÃ¼gbaren FDK-Domains zurÃ¼ck.
 
 ### 7. `get_object_types`
-Gibt alle verfügbaren FDK-Objekttypen zurück.
+Gibt alle verfÃ¼gbaren FDK-Objekttypen zurÃ¼ck.
 
 ### 8. `get_all_objects`
-Gibt alle geladenen FDK-Objekte zurück.
+Gibt alle geladenen FDK-Objekte zurÃ¼ck.
 
 ```json
 {
@@ -98,7 +98,7 @@ Gibt alle geladenen FDK-Objekte zurück.
 
 ## Konfiguration
 
-Der Server kann über die `FDKServerConfig` Klasse konfiguriert werden:
+Der Server kann Ã¼ber die `FDKServerConfig` Klasse konfiguriert werden:
 
 ```python
 config = FDKServerConfig(
@@ -114,7 +114,7 @@ config = FDKServerConfig(
 
 ## Datenstruktur
 
-Das System unterstützt FDK-Objekte mit folgender Struktur:
+Das System unterstÃ¼tzt FDK-Objekte mit folgender Struktur:
 
 - **ID**: Eindeutige Objekt-ID (z.B. `OBJ_FB_1`)
 - **Name**: Objektname (z.B. "Gleisrost")
@@ -130,7 +130,7 @@ Das System unterstützt FDK-Objekte mit folgender Struktur:
 uv run python main.py
 ```
 
-### Für Tests
+### FÃ¼r Tests
 
 ```bash
 uv run python test_server.py
@@ -148,12 +148,12 @@ await provider.initialize()
 objects = await provider.get_all_objects()
 ```
 
-## Unterstützte Domains
+## UnterstÃ¼tzte Domains
 
 Das System arbeitet mit folgenden FDK-Domains:
 
 - **FB** (Fahrbahn): Gleisbau-Objekte
-- **BR** (Brücken): Brückenbau-Objekte  
+- **BR** (BrÃ¼cken): BrÃ¼ckenbau-Objekte  
 - **HB** (Hochbau): Hochbau-Objekte
 - **EN** (Energie): Energie-Objekte
 
@@ -166,7 +166,7 @@ uv run ruff check .
 uv run pyright .
 ```
 
-### Tests ausführen
+### Tests ausfÃ¼hren
 
 ```bash
 uv run python test_server.py
@@ -174,4 +174,4 @@ uv run python test_server.py
 
 ## Lizenz
 
-[Lizenz-Information hier einfügen]
+[Lizenz-Information hier einfÃ¼gen]

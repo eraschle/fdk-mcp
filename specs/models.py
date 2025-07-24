@@ -240,7 +240,7 @@ class FDKPropertySet:
                 else:
                     # Convert complex types to string
                     value = str(prop_data)
-                
+
                 properties[prop_name] = FDKProperty(
                     name=prop_name,
                     value=value,
@@ -316,7 +316,7 @@ class FDKObject:
             else:
                 # Convert complex types to string
                 value = str(prop_value)
-            
+
             properties[prop_name] = FDKProperty(
                 name=prop_name,
                 value=value,

@@ -6,14 +6,13 @@ FDK MCP Server - Main entry point
 import asyncio
 import logging
 import sys
-from pathlib import Path
 
 from src.fdk_mcp import FDKMCPServer, FDKServerConfig
 
 
 async def main():
     """Main entry point for the FDK MCP Server"""
-    
+
     # Configuration
     config = FDKServerConfig(
         data_directory="data/sample",
@@ -22,12 +21,12 @@ async def main():
         cache_ttl_seconds=3600,
         enable_api_fallback=True,
         max_search_results=100,
-        log_level="INFO"
+        log_level="INFO",
     )
-    
+
     # Create and run server
     server = FDKMCPServer(config)
-    
+
     try:
         await server.run()
         # Keep the server running

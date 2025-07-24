@@ -5,19 +5,19 @@ Service Layer für 3D Modellsucher App
 import asyncio
 import concurrent.futures
 import glob
-import os
-import threading
-from datetime import datetime, timedelta
-from typing import Callable, Any
-import subprocess
 import json
+import os
+import subprocess
+import threading
+from collections.abc import Callable
+from datetime import datetime, timedelta
+from typing import Any
 
 import requests
+from models import AppConfig, CacheItem, FDKObject, ImageFile, SearchResult
+from PIL import Image, ImageTk
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from PIL import Image, ImageTk
-
-from models import ImageFile, SearchResult, AppConfig, CacheItem, FDKObject
 
 
 class FileSearchService:
@@ -54,7 +54,9 @@ class FileSearchService:
             all_files.extend(pattern_files)
 
             if progress_callback:
-                progress_callback(len(all_files), f"Suche Pattern {i + 1}/{len(patterns)}")
+                progress_callback(
+                    len(all_files), f"Suche Pattern {i + 1}/{len(patterns)}"
+                )
 
         if self._search_cancelled:
             return SearchResult({}, 0, base_path, search_start)
@@ -89,7 +91,11 @@ class FileSearchService:
 
         try:
             return sorted(
-                [d for d in os.listdir(base_path) if os.path.isdir(os.path.join(base_path, d))]
+                [
+                    d
+                    for d in os.listdir(base_path)
+                    if os.path.isdir(os.path.join(base_path, d))
+                ]
             )
         except Exception:
             return []
@@ -108,7 +114,9 @@ class FileSearchService:
                 return
 
             # Use /select to highlight the specific file in Explorer
-            subprocess.run(["explorer", "/select,", os.path.abspath(file_path)], check=False)
+            subprocess.run(
+                ["explorer", "/select,", os.path.abspath(file_path)], check=False
+            )
         except Exception as e:
             print(f"Error opening explorer for {file_path}: {e}")
             # Fallback: try to open just the directory
@@ -143,7 +151,9 @@ class CacheService:
 
             # Remove oldest items if cache is full
             while len(self._cache) >= self.max_size:
-                oldest_key = min(self._cache.keys(), key=lambda k: self._cache[k].access_time)
+                oldest_key = min(
+                    self._cache.keys(), key=lambda k: self._cache[k].access_time
+                )
                 del self._cache[oldest_key]
 
             # Add new item
@@ -180,7 +190,9 @@ class ImageProcessingService:
     def __init__(self, config: AppConfig, cache_service: CacheService):
         self.config = config
         self.cache_service = cache_service
-        self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=config.max_workers)
+        self.executor = concurrent.futures.ThreadPoolExecutor(
+            max_workers=config.max_workers
+        )
         self.loop = None
 
     def set_event_loop(self, loop):
@@ -199,7 +211,9 @@ class ImageProcessingService:
 
         try:
             # Process image in thread pool
-            future = self.loop.run_in_executor(self.executor, self._process_image, image_file)
+            future = self.loop.run_in_executor(
+                self.executor, self._process_image, image_file
+            )
             image_data = await future
 
             # Cache the result
@@ -210,7 +224,9 @@ class ImageProcessingService:
         except Exception as e:
             print(f"Error loading image {image_file.path}: {e}")
             # Return placeholder on error
-            placeholder = ImageTk.PhotoImage(Image.new("RGB", self.config.image_size, color="red"))
+            placeholder = ImageTk.PhotoImage(
+                Image.new("RGB", self.config.image_size, color="red")
+            )
             return image_file.name, placeholder
 
     def _process_image(self, image_file: ImageFile) -> ImageTk.PhotoImage:
@@ -225,7 +241,9 @@ class ImageProcessingService:
                 img.thumbnail(self.config.image_size, Image.Resampling.LANCZOS)
 
                 # Create fixed-size canvas and center the image
-                canvas = Image.new("RGBA", self.config.image_size, color=(255, 255, 255, 0))
+                canvas = Image.new(
+                    "RGBA", self.config.image_size, color=(255, 255, 255, 0)
+                )
                 x = (self.config.image_size[0] - img.width) // 2
                 y = (self.config.image_size[1] - img.height) // 2
                 canvas.paste(img, (x, y))
@@ -234,7 +252,9 @@ class ImageProcessingService:
 
         except Exception as e:
             print(f"Error processing image {image_file.path}: {e}")
-            return ImageTk.PhotoImage(Image.new("RGB", self.config.image_size, color="lightgray"))
+            return ImageTk.PhotoImage(
+                Image.new("RGB", self.config.image_size, color="lightgray")
+            )
 
     def load_image_sync(self, image_file: ImageFile) -> tuple[str, Any]:
         """Load image synchronously (fallback)"""
@@ -319,7 +339,7 @@ class ConfigurationService:
             import json
 
             if os.path.exists(self.config_path):
-                with open(self.config_path, "r", encoding="utf-8") as f:
+                with open(self.config_path, encoding="utf-8") as f:
                     data = json.load(f)
                     # Update config with loaded values
                     for key, value in data.items():
@@ -382,7 +402,9 @@ class FDKApiService:
         )
 
         # Configure HTTP adapter with connection pooling
-        adapter = HTTPAdapter(pool_connections=10, pool_maxsize=20, max_retries=retry_strategy)
+        adapter = HTTPAdapter(
+            pool_connections=10, pool_maxsize=20, max_retries=retry_strategy
+        )
 
         self.session.mount("http://", adapter)
         self.session.mount("https://", adapter)
@@ -420,7 +442,9 @@ class FDKApiService:
 
     def _is_cache_valid(self, cached_time: datetime) -> bool:
         """Check if cached data is still valid"""
-        return datetime.now() - cached_time < timedelta(seconds=self.config.api_cache_ttl)
+        return datetime.now() - cached_time < timedelta(
+            seconds=self.config.api_cache_ttl
+        )
 
     def _get_cached_object(self, object_id: str) -> FDKObject | None:
         """Get cached FDK object if valid"""
@@ -463,7 +487,9 @@ class FDKApiService:
         # Make API request in thread pool to avoid blocking
         loop = asyncio.get_event_loop()
         try:
-            api_data = await loop.run_in_executor(None, self._make_api_request, object_id)
+            api_data = await loop.run_in_executor(
+                None, self._make_api_request, object_id
+            )
 
             if api_data and "error" not in api_data:
                 fdk_object = FDKObject.from_api_response(api_data)
@@ -497,7 +523,9 @@ class FDKApiService:
 
         return None
 
-    async def get_fdk_object_for_image_async(self, image_file: ImageFile) -> FDKObject | None:
+    async def get_fdk_object_for_image_async(
+        self, image_file: ImageFile
+    ) -> FDKObject | None:
         """Get FDK object for an image file asynchronously"""
         object_id = self._extract_object_id_from_filename(image_file.name)
         if not object_id:
