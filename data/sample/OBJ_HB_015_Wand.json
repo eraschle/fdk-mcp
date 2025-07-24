@@ -1,0 +1,369 @@
+{
+    "id": "OBJ_HB_015",
+    "name": "Wand",
+    "domainName": "Hochbau",
+    "description": "Die Bauteilart Wand gruppiert alle Bauteile mit gleicher oder ähnlicher Funktion.\r\nDie Funktion Wand definiert physikalisch Räume.\r\nZu dieser Bauteilart gehören zum Beispiel: Mauerwerkwand, Gipskartonwand, Holzwand, Betonwand",
+    "structuredDescription": [
+        {
+            "type": "paragraph",
+            "content": "Die Bauteilart Wand gruppiert alle Bauteile mit gleicher oder ähnlicher Funktion."
+        },
+        {
+            "type": "paragraph",
+            "content": "Die Funktion Wand definiert physikalisch Räume."
+        },
+        {
+            "type": "paragraph",
+            "content": "Zu dieser Bauteilart gehören zum Beispiel: Mauerwerkwand, Gipskartonwand, Holzwand, Betonwand"
+        }
+    ],
+    "imageId": "2fca235a-3fc0-403c-af6f-5b76e1ae50f4",
+    "creationTimestamp": "2025-01-31T10:09:50.047Z",
+    "componentRelationships": [],
+    "assemblyRelationships": [
+        {
+            "id": "OBJ_HB_562",
+            "name": "Aufzugsschachtanlage"
+        },
+        {
+            "id": "OBJ_HB_616",
+            "name": "Fahrtreppenschachtanlage"
+        },
+        {
+            "id": "OBJ_HB_476",
+            "name": "Perimeterschutzanlage"
+        },
+        {
+            "id": "OBJ_HB_503",
+            "name": "Wartehalle"
+        },
+        {
+            "id": "OBJ_HB_459",
+            "name": "Innenausbau"
+        },
+        {
+            "id": "OBJ_HB_495",
+            "name": "Treppenanlage"
+        },
+        {
+            "id": "OBJ_HB_479",
+            "name": "Personenüberführungsanlage"
+        },
+        {
+            "id": "OBJ_HB_463",
+            "name": "Lastenaufzugsanlage"
+        },
+        {
+            "id": "OBJ_HB_483",
+            "name": "Rampenanlage"
+        },
+        {
+            "id": "OBJ_HB_003",
+            "name": "Raum"
+        }
+    ],
+    "releaseHistory": [
+        {
+            "versionId": "13.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "14.0.0",
+            "isIncluded": true
+        },
+        {
+            "versionId": "15.0.0",
+            "isIncluded": true
+        }
+    ],
+    "siaPhaseScopes": [
+        {
+            "phaseRange": "31",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "32",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "33",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "41",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "51",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "52",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "53",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "61",
+            "isInScope": true
+        }
+    ],
+    "ifcAssignments": [],
+    "ebkpConcepts": [
+        {
+            "id": "C02",
+            "name": "Wandkonstruktion"
+        }
+    ],
+    "domainModels": [
+        {
+            "id": "ARC",
+            "name": "Architektur"
+        },
+        {
+            "id": "SPS",
+            "name": "Tragwerk"
+        }
+    ],
+    "propertySets": [
+        {
+            "id": "PST_459210",
+            "name": "SBB-CFF-FFS_LO",
+            "properties": [
+                {
+                    "id": "PTY_380660",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "eBKP-Position",
+                    "unit": "",
+                    "description": "eBKP-Position des Objekttypen bis auf die zweite Stufe des eBKP (eBKP-Element)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380661",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Kennzeichnung",
+                    "unit": "",
+                    "description": "Primäre Kennzeichnung der Anlage (AKS)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_417692",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Die Bezeichnung des Anlagenobjektes wird durch die Anlagengattungen definiert und soll automatisiert erfolgen.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459211",
+            "name": "SBB-CFF-FFS_PO",
+            "properties": [
+                {
+                    "id": "PTY_380662",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Charge",
+                    "unit": "",
+                    "description": "Die Chargennummer liefert weitere Informationen zur Charge und wird für die durchgehende Rückverfolgbarkeit benötigt._x000D_\r\nCharge wird über den Hersteller bereitgestellt",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380663",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Einbaudatum",
+                    "unit": "",
+                    "description": "Das Datum (tagesgenau), an dem das physische Objekt an seinem derzeitigen Ort eingebaut wurde.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380664",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Garant",
+                    "unit": "",
+                    "description": "Hersteller, Lieferant oder Verkäufer welcher die Garantieleistungen erbringt, bis das entsprechende Produkt frei von Mängeln ist.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380665",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Anfang",
+                    "unit": "",
+                    "description": "Anfangsdatum des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380666",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 2-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 2-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380667",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 5-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 5-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380668",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Genauigkeit der Verortung",
+                    "unit": "cm",
+                    "description": "Maximale Abweichung der geografischen Lage oder der Ausdehnung des physischen Anlagenobjekts gegenüber der Realität in Zentimeter.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459213",
+            "name": "SBB-CFF-FFS",
+            "properties": [
+                {
+                    "id": "PTY_380678",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeID",
+                    "unit": "",
+                    "description": "Objekttyp ID gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380679",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeName",
+                    "unit": "",
+                    "description": "Name des Objekttypen gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380680",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459214",
+                        "name": "ObjectStatusProject"
+                    },
+                    "name": "ObjectStatusProject",
+                    "unit": "",
+                    "description": "Objektstatus des Objekttypen im Projekt",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_84946",
+            "name": "OBJ_HB_015_PO",
+            "properties": [
+                {
+                    "id": "PTY_164905",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Zustand",
+                    "unit": "",
+                    "description": "Zustand des Objektes gemäss einer Standardisierten Bewertung.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_84947",
+            "name": "OBJ_HB_015_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_164906",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Enumeration"
+                    },
+                    "name": "Hauptmaterial",
+                    "unit": "",
+                    "example": ""
+                }
+            ]
+        }
+    ],
+    "referencedEnumerations": [
+        {
+            "id": "ENM_459214",
+            "name": "ObjectStatusProject",
+            "values": [
+                {
+                    "designation": "Temporär",
+                    "description": ""
+                },
+                {
+                    "designation": "Bestand",
+                    "description": ""
+                },
+                {
+                    "designation": "Abbruch",
+                    "description": ""
+                },
+                {
+                    "designation": "Neubau",
+                    "description": ""
+                },
+                {
+                    "designation": "Modifiziert",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}

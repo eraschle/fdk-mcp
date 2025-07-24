@@ -1,0 +1,476 @@
+{
+    "id": "OBJ_EN_193",
+    "name": "Unterwerk",
+    "domainName": "Energie",
+    "description": "EN Anlage zur Transformation von Hochspannung in 15 kV Bahnstrom und Einspeisung in die Bahnstromversorgung der Fahrleitungen ein.",
+    "structuredDescription": [
+        {
+            "type": "paragraph",
+            "content": "EN Anlage zur Transformation von Hochspannung in 15 kV Bahnstrom und Einspeisung in die Bahnstromversorgung der Fahrleitungen ein."
+        }
+    ],
+    "imageId": "",
+    "creationTimestamp": "2025-01-31T09:37:49.614Z",
+    "componentRelationships": [
+        {
+            "id": "OBJ_EN_352",
+            "name": "Brandmeldezentrale (EN)"
+        },
+        {
+            "id": "OBJ_EN_331",
+            "name": "Zahnradbahn"
+        },
+        {
+            "id": "OBJ_EN_91",
+            "name": "Aufsteigmittel"
+        },
+        {
+            "id": "OBJ_EN_185",
+            "name": "Eigenbedarfsversorgung"
+        },
+        {
+            "id": "OBJ_EN_350",
+            "name": "Videoüberwachung"
+        },
+        {
+            "id": "OBJ_EN_134",
+            "name": "Transformator (EN)"
+        },
+        {
+            "id": "OBJ_EN_349",
+            "name": "Alarmierungssystem"
+        },
+        {
+            "id": "OBJ_EN_338",
+            "name": "Umluftkühlsystem"
+        },
+        {
+            "id": "OBJ_EN_351",
+            "name": "Überwachungssystem"
+        },
+        {
+            "id": "OBJ_EN_353",
+            "name": "Intrusionsschutzsystem"
+        },
+        {
+            "id": "OBJ_EN_154",
+            "name": "Hochspannungsgerüst"
+        },
+        {
+            "id": "OBJ_EN_112",
+            "name": "Erdseil"
+        },
+        {
+            "id": "OBJ_EN_329",
+            "name": "Druckluftanlage (EN)"
+        },
+        {
+            "id": "OBJ_EN_138",
+            "name": "Gasisolierte Leiter"
+        },
+        {
+            "id": "OBJ_EN_333",
+            "name": "Schachtbefahrungsanlage"
+        },
+        {
+            "id": "OBJ_EN_117",
+            "name": "Schaltanlage"
+        },
+        {
+            "id": "OBJ_EN_149",
+            "name": "Erdungsanlage (EN)"
+        },
+        {
+            "id": "OBJ_EN_348",
+            "name": "Gasdetektionssystem"
+        },
+        {
+            "id": "OBJ_EN_172",
+            "name": "Sekundärtechnik Leit-, Schutz-, Mess und Regeltechnik"
+        },
+        {
+            "id": "OBJ_EN_332",
+            "name": "Aufzugsanlage"
+        },
+        {
+            "id": "OBJ_EN_339",
+            "name": "Kühlsystem"
+        },
+        {
+            "id": "OBJ_EN_337",
+            "name": "Rückkühlsystem (Pump Skid)"
+        },
+        {
+            "id": "OBJ_EN_141",
+            "name": "Flexible Verbinder"
+        },
+        {
+            "id": "OBJ_EN_335",
+            "name": "Kran, Aufzug, Aufstieg"
+        },
+        {
+            "id": "OBJ_EN_370",
+            "name": "Brandschutz-Baumassnahme"
+        },
+        {
+            "id": "OBJ_EN_70",
+            "name": "Krananlage (EN)"
+        },
+        {
+            "id": "OBJ_EN_341",
+            "name": "Kühlwassersystem"
+        },
+        {
+            "id": "OBJ_EN_323",
+            "name": "Hydraulikanlage"
+        },
+        {
+            "id": "OBJ_EN_320",
+            "name": "Hilfsanlage Allgemein"
+        },
+        {
+            "id": "OBJ_EN_139",
+            "name": "Stromschiene (EN)"
+        },
+        {
+            "id": "OBJ_EN_334",
+            "name": "Seilbahn"
+        },
+        {
+            "id": "OBJ_EN_177",
+            "name": "Sekundärtechnik Kommunikation"
+        },
+        {
+            "id": "OBJ_EN_354",
+            "name": "Brandschutz-Löschsystem"
+        }
+    ],
+    "assemblyRelationships": [],
+    "releaseHistory": [
+        {
+            "versionId": "13.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "14.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "15.0.0",
+            "isIncluded": true
+        }
+    ],
+    "siaPhaseScopes": [],
+    "ifcAssignments": [],
+    "ebkpConcepts": [],
+    "domainModels": [
+        {
+            "id": "ENG",
+            "name": "Energie"
+        }
+    ],
+    "propertySets": [
+        {
+            "id": "PST_459210",
+            "name": "SBB-CFF-FFS_LO",
+            "properties": [
+                {
+                    "id": "PTY_380660",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "eBKP-Position",
+                    "unit": "",
+                    "description": "eBKP-Position des Objekttypen bis auf die zweite Stufe des eBKP (eBKP-Element)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380661",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Kennzeichnung",
+                    "unit": "",
+                    "description": "Primäre Kennzeichnung der Anlage (AKS)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_417692",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Die Bezeichnung des Anlagenobjektes wird durch die Anlagengattungen definiert und soll automatisiert erfolgen.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459213",
+            "name": "SBB-CFF-FFS",
+            "properties": [
+                {
+                    "id": "PTY_380678",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeID",
+                    "unit": "",
+                    "description": "Objekttyp ID gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380679",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeName",
+                    "unit": "",
+                    "description": "Name des Objekttypen gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380680",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459214",
+                        "name": "ObjectStatusProject"
+                    },
+                    "name": "ObjectStatusProject",
+                    "unit": "",
+                    "description": "Objektstatus des Objekttypen im Projekt",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_493582",
+            "name": "OBJ_EN_193_LO",
+            "properties": [
+                {
+                    "id": "PTY_430479",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anlagenamen",
+                    "unit": "",
+                    "description": "Angabe zum Anlagennamen gemäss \"Werksliste\"",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430481",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anlagennummer",
+                    "unit": "",
+                    "description": "Angabe Anlagennummer gemäss \"Werksliste\"",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430483",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_492862",
+                        "name": "Anlagentyp"
+                    },
+                    "name": "Anlagentyp",
+                    "unit": "",
+                    "description": "Kürzel für den EN Anlagentyp",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430485",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_492860",
+                        "name": "Anlagenstatus_EN"
+                    },
+                    "name": "Anlagenstatus_EN",
+                    "unit": "",
+                    "description": "Angabe für den Status gemäss Werksliste",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430487",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "DIDOK-Code",
+                    "unit": "",
+                    "description": "Code des Betriebspunkt-Netz in der Dienstellen-Dokumentation",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430489",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "SAP-PM Abkürzung",
+                    "unit": "",
+                    "description": "geführt in SAP PM, Kürzel zusammengesetzt aus Anlagen-Nummer (3 Stellen) und EN Kürzel (2 Stellen)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430490",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "EN-Kürzel-2",
+                    "unit": "",
+                    "description": "zweistelliges Kürzel der Anlage",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430494",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anlagenkostenstelle",
+                    "unit": "",
+                    "description": "SAP Kostenstellen-Nummer",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430496",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "EN-Kürzel-4",
+                    "unit": "",
+                    "description": "vierstelliges Kürzel der Anlage",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_430497",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anlagenverantwortlicher (AnV)",
+                    "unit": "",
+                    "description": "Person mit der Rolle Anlagenverantwortlicher",
+                    "example": ""
+                }
+            ]
+        }
+    ],
+    "referencedEnumerations": [
+        {
+            "id": "ENM_459214",
+            "name": "ObjectStatusProject",
+            "values": [
+                {
+                    "designation": "Temporär",
+                    "description": ""
+                },
+                {
+                    "designation": "Bestand",
+                    "description": ""
+                },
+                {
+                    "designation": "Abbruch",
+                    "description": ""
+                },
+                {
+                    "designation": "Neubau",
+                    "description": ""
+                },
+                {
+                    "designation": "Modifiziert",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_492862",
+            "name": "Anlagentyp",
+            "values": [
+                {
+                    "designation": "fUW",
+                    "description": ""
+                },
+                {
+                    "designation": "FU",
+                    "description": ""
+                },
+                {
+                    "designation": "UW",
+                    "description": ""
+                },
+                {
+                    "designation": "Atm",
+                    "description": ""
+                },
+                {
+                    "designation": "SP",
+                    "description": ""
+                },
+                {
+                    "designation": "BLK",
+                    "description": ""
+                },
+                {
+                    "designation": "UL",
+                    "description": ""
+                },
+                {
+                    "designation": "KW",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_492860",
+            "name": "Anlagenstatus_EN",
+            "values": [
+                {
+                    "designation": "In Betrieb",
+                    "description": ""
+                },
+                {
+                    "designation": "Ausser Betrieb",
+                    "description": ""
+                },
+                {
+                    "designation": "Zurückgebaut",
+                    "description": ""
+                },
+                {
+                    "designation": "Nicht realisiert",
+                    "description": ""
+                },
+                {
+                    "designation": "In Projektphase",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}

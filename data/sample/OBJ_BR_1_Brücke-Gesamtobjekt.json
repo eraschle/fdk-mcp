@@ -1,0 +1,571 @@
+{
+    "id": "OBJ_BR_1",
+    "name": "Brücke-Gesamtobjekt",
+    "domainName": "Brücken",
+    "description": "Übergeordnetes Objekt, das die gesamte Struktur und ihre Komponenten zusammenfasst.\r\n\r\nAls Brücken gelten bei der SBB alle Brücken unter, über oder neben den Gleisen, die auf dem Bahngebiet liegen und deren lichte rechtwinklige Weite grösser oder gleich 2.00 Meter beträgt. Eine Brücke kleiner als 2 Meter lichte Weite wird als Durchlass bezeichnet. Das Objekt \"Brücke\" bezeichnet das gesamte Bauwerk. Das Gesamtobjekt besteht aus Baueinheiten.\r\n\r\nDas Brücke-Gesamtobjekt kann aus nachstehenden Objekttypen bestehen:\r\n - Brücke-Baueinheit",
+    "structuredDescription": [
+        {
+            "type": "paragraph",
+            "content": "Übergeordnetes Objekt, das die gesamte Struktur und ihre Komponenten zusammenfasst."
+        },
+        {
+            "type": "paragraph",
+            "content": "Als Brücken gelten bei der SBB alle Brücken unter, über oder neben den Gleisen, die auf dem Bahngebiet liegen und deren lichte rechtwinklige Weite grösser oder gleich 2.00 Meter beträgt. Eine Brücke kleiner als 2 Meter lichte Weite wird als Durchlass bezeichnet. Das Objekt \"Brücke\" bezeichnet das gesamte Bauwerk. Das Gesamtobjekt besteht aus Baueinheiten."
+        },
+        {
+            "type": "paragraph",
+            "content": "Das Brücke-Gesamtobjekt kann aus nachstehenden Objekttypen bestehen:"
+        },
+        {
+            "type": "itemization",
+            "content": [
+                "Brücke-Baueinheit"
+            ]
+        }
+    ],
+    "imageId": "ac52861c-2afd-4514-b26a-398042a3693a",
+    "creationTimestamp": "2025-01-31T10:09:04.290Z",
+    "componentRelationships": [
+        {
+            "id": "OBJ_BR_2",
+            "name": "Brücke-Baueinheit"
+        }
+    ],
+    "assemblyRelationships": [],
+    "releaseHistory": [
+        {
+            "versionId": "13.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "14.0.0",
+            "isIncluded": true
+        },
+        {
+            "versionId": "15.0.0",
+            "isIncluded": true
+        }
+    ],
+    "siaPhaseScopes": [
+        {
+            "phaseRange": "21",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "31",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "32",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "33",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "41",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "51",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "52",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "53",
+            "isInScope": true
+        }
+    ],
+    "ifcAssignments": [
+        {
+            "version": "IFC2x3",
+            "ifcClass": "IfcBuilding",
+            "ifcType": "",
+            "ifcPredefinedType": ""
+        },
+        {
+            "version": "IFC4",
+            "ifcClass": "IfcBuilding",
+            "ifcType": "",
+            "ifcPredefinedType": ""
+        },
+        {
+            "version": "IFC4x3_ADD2",
+            "ifcClass": "IfcBridge",
+            "ifcType": "",
+            "ifcPredefinedType": ""
+        }
+    ],
+    "ebkpConcepts": [
+        {
+            "id": "n.a.",
+            "name": "not applicable"
+        }
+    ],
+    "domainModels": [
+        {
+            "id": "ARC",
+            "name": "Architektur"
+        },
+        {
+            "id": "CBP",
+            "name": "Kabelschutz"
+        },
+        {
+            "id": "DRN",
+            "name": "Entwässerung"
+        },
+        {
+            "id": "ELC",
+            "name": "Elektro"
+        },
+        {
+            "id": "EXC",
+            "name": "Sperrzonen"
+        },
+        {
+            "id": "FRN",
+            "name": "Ausstattung"
+        },
+        {
+            "id": "LGT",
+            "name": "Beleuchtung"
+        },
+        {
+            "id": "MNT",
+            "name": "Einbauteile"
+        },
+        {
+            "id": "OPN",
+            "name": "Aussparungen"
+        },
+        {
+            "id": "RNF",
+            "name": "Bewehrung"
+        },
+        {
+            "id": "SGN",
+            "name": "Signaletik"
+        },
+        {
+            "id": "SPS",
+            "name": "Tragwerk"
+        },
+        {
+            "id": "STA",
+            "name": "Statik"
+        }
+    ],
+    "propertySets": [
+        {
+            "id": "PST_459210",
+            "name": "SBB-CFF-FFS_LO",
+            "properties": [
+                {
+                    "id": "PTY_380660",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "eBKP-Position",
+                    "unit": "",
+                    "description": "eBKP-Position des Objekttypen bis auf die zweite Stufe des eBKP (eBKP-Element)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380661",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Kennzeichnung",
+                    "unit": "",
+                    "description": "Primäre Kennzeichnung der Anlage (AKS)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_417692",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Die Bezeichnung des Anlagenobjektes wird durch die Anlagengattungen definiert und soll automatisiert erfolgen.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459213",
+            "name": "SBB-CFF-FFS",
+            "properties": [
+                {
+                    "id": "PTY_380678",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeID",
+                    "unit": "",
+                    "description": "Objekttyp ID gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380679",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeName",
+                    "unit": "",
+                    "description": "Name des Objekttypen gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380680",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459214",
+                        "name": "ObjectStatusProject"
+                    },
+                    "name": "ObjectStatusProject",
+                    "unit": "",
+                    "description": "Objektstatus des Objekttypen im Projekt",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_461665",
+            "name": "OBJ_BR_1_LO",
+            "properties": [
+                {
+                    "id": "PTY_388622",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_461508",
+                        "name": "Erdbebenstreckenklasse"
+                    },
+                    "name": "Erdbebenstreckenklasse (ESK)",
+                    "unit": "",
+                    "description": "Einteilung Erdbebenstreckenklasse der Linie im Bauwerksperimeter gemäss Festlegung ISB",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_388624",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_461532",
+                        "name": "Intervallklasse"
+                    },
+                    "name": "Intervallklasse",
+                    "unit": "",
+                    "description": "Intervallklasse in Abhängigkeit der Sicherheitsrelevanz für den Betrieb und der Eigentumsverhältnisse",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_388626",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_461499",
+                        "name": "Bauwerksklasse"
+                    },
+                    "name": "Bauwerksklasse (BWK)",
+                    "unit": "",
+                    "description": "Bauwerksklasse gemäss SIA 261",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_388627",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_461531",
+                        "name": "Kolkgefährdung"
+                    },
+                    "name": "Kolkgefährdung",
+                    "unit": "",
+                    "description": "Einschätzung der Kolk- und Erosionsgefährdung des Bauwerks",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_388628",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_461516",
+                        "name": "Erdbebenzone"
+                    },
+                    "name": "Erdbebenzone",
+                    "unit": "",
+                    "description": "Einteilung Erdbebenzone am Brückenstandort gemäss SIA 261",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_388629",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_461518",
+                        "name": "Gewässerschutzbereich"
+                    },
+                    "name": "Gewässerschutzbereich",
+                    "unit": "",
+                    "description": "Zuteilung Gewässerschutzbereich am Brückenstandort nach GSchG/GSchV",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_388631",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_461498",
+                        "name": "Baugrundklasse"
+                    },
+                    "name": "Baugrundklasse",
+                    "unit": "",
+                    "description": "Einteilung Baugrundklasse am Brückenstandort gemäss SIA 261",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_388632",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_461519",
+                        "name": "Grundwasserschutzzone"
+                    },
+                    "name": "Grundwasserschutzzone",
+                    "unit": "",
+                    "description": "Zuteilung Grundwasserschutzzone am Brückenstandort nach GSchG/GSchV",
+                    "example": ""
+                }
+            ]
+        }
+    ],
+    "referencedEnumerations": [
+        {
+            "id": "ENM_459214",
+            "name": "ObjectStatusProject",
+            "values": [
+                {
+                    "designation": "Temporär",
+                    "description": ""
+                },
+                {
+                    "designation": "Bestand",
+                    "description": ""
+                },
+                {
+                    "designation": "Abbruch",
+                    "description": ""
+                },
+                {
+                    "designation": "Neubau",
+                    "description": ""
+                },
+                {
+                    "designation": "Modifiziert",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_461508",
+            "name": "Erdbebenstreckenklasse",
+            "values": [
+                {
+                    "designation": "III",
+                    "description": ""
+                },
+                {
+                    "designation": "0",
+                    "description": ""
+                },
+                {
+                    "designation": "I",
+                    "description": ""
+                },
+                {
+                    "designation": "II",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_461532",
+            "name": "Intervallklasse",
+            "values": [
+                {
+                    "designation": "2",
+                    "description": ""
+                },
+                {
+                    "designation": "0",
+                    "description": ""
+                },
+                {
+                    "designation": "1",
+                    "description": ""
+                },
+                {
+                    "designation": "3",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_461499",
+            "name": "Bauwerksklasse",
+            "values": [
+                {
+                    "designation": "II",
+                    "description": ""
+                },
+                {
+                    "designation": "I",
+                    "description": ""
+                },
+                {
+                    "designation": "III",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_461531",
+            "name": "Kolkgefährdung",
+            "values": [
+                {
+                    "designation": "2",
+                    "description": ""
+                },
+                {
+                    "designation": "0",
+                    "description": ""
+                },
+                {
+                    "designation": "1",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_461516",
+            "name": "Erdbebenzone",
+            "values": [
+                {
+                    "designation": "Z1a",
+                    "description": ""
+                },
+                {
+                    "designation": "Z3a",
+                    "description": ""
+                },
+                {
+                    "designation": "Z1b",
+                    "description": ""
+                },
+                {
+                    "designation": "Z2",
+                    "description": ""
+                },
+                {
+                    "designation": "Z3b",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_461518",
+            "name": "Gewässerschutzbereich",
+            "values": [
+                {
+                    "designation": "Zo",
+                    "description": ""
+                },
+                {
+                    "designation": "keine",
+                    "description": ""
+                },
+                {
+                    "designation": "Zu",
+                    "description": ""
+                },
+                {
+                    "designation": "Ao",
+                    "description": ""
+                },
+                {
+                    "designation": "Au",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_461498",
+            "name": "Baugrundklasse",
+            "values": [
+                {
+                    "designation": "F",
+                    "description": ""
+                },
+                {
+                    "designation": "D",
+                    "description": ""
+                },
+                {
+                    "designation": "E",
+                    "description": ""
+                },
+                {
+                    "designation": "A",
+                    "description": ""
+                },
+                {
+                    "designation": "B",
+                    "description": ""
+                },
+                {
+                    "designation": "C",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_461519",
+            "name": "Grundwasserschutzzone",
+            "values": [
+                {
+                    "designation": "S1",
+                    "description": ""
+                },
+                {
+                    "designation": "Sh",
+                    "description": ""
+                },
+                {
+                    "designation": "keine",
+                    "description": ""
+                },
+                {
+                    "designation": "S3",
+                    "description": ""
+                },
+                {
+                    "designation": "S2",
+                    "description": ""
+                },
+                {
+                    "designation": "Sm",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}

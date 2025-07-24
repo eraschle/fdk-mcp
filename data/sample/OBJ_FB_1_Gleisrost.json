@@ -1,0 +1,603 @@
+{
+    "id": "OBJ_FB_1",
+    "name": "Gleisrost",
+    "domainName": "Fahrbahn",
+    "description": "Der Gleisrost ist eine funktionale Sicht, die sich aus den Objekttypen Fahrschiene, Schienenbefestigung und Normalschwelle zusammensetzt. Eine Eigenschaft des Gleisrostes ist, dass die Bauteile fix zusammengefügt und in sich nicht beweglich sind. \r\nDer Gleisrost als Ganzes sammelt und überträgt die Kräfte in den Oberbau. Dieser kann aus einem Schotterbett oder einer festen Fahrbahn bestehen. Im Extremfall (bei einfachen Bahnen) kann der Gleisrost auch auf dem gewachsenen Boden liegen. Er erfüllt seine Funktion immer noch: Es können Züge fahren.\r\nDer Gleisrost folgt der Linienführung im 3-Dimensionalen Raum. Er wird eindeutig durch die Gleisachse (Linienführung/Alignment) und deren Ausprägungen definiert. Sie verläuft mittig zwischen den Oberkanten der Fahrschiene (SiOK). Der Gleisrost hat somit Kennwerte bezüglich horizontaler und vertikaler Linienführung und trägt auch die Informationen bezüglich Überhöhung.\r\nIn den Prozessen wird der Gleisrost oft als Einheit betrachtet. Einerseits bei der Planung in Projekten, andererseits auch bei zahlreichen Massnahmen der Oberbauerneuerung.\r\nEin Gleisrost kann aus nachstehenden Objekttypen bestehen – muss aber nicht zwingend alle haben:\r\n- Fahrschiene\r\n- Schienenbefestigung\r\n- Schwellen gemäss OTK\r\n- Schienenstösse gemäss OTK\r\n- Weitere Objekte gemäss OTK\r\n",
+    "structuredDescription": [
+        {
+            "type": "paragraph",
+            "content": "Der Gleisrost ist eine funktionale Sicht, die sich aus den Objekttypen Fahrschiene, Schienenbefestigung und Normalschwelle zusammensetzt. Eine Eigenschaft des Gleisrostes ist, dass die Bauteile fix zusammengefügt und in sich nicht beweglich sind."
+        },
+        {
+            "type": "paragraph",
+            "content": "Der Gleisrost als Ganzes sammelt und überträgt die Kräfte in den Oberbau. Dieser kann aus einem Schotterbett oder einer festen Fahrbahn bestehen. Im Extremfall (bei einfachen Bahnen) kann der Gleisrost auch auf dem gewachsenen Boden liegen. Er erfüllt seine Funktion immer noch: Es können Züge fahren."
+        },
+        {
+            "type": "paragraph",
+            "content": "Der Gleisrost folgt der Linienführung im 3-Dimensionalen Raum. Er wird eindeutig durch die Gleisachse (Linienführung/Alignment) und deren Ausprägungen definiert. Sie verläuft mittig zwischen den Oberkanten der Fahrschiene (SiOK). Der Gleisrost hat somit Kennwerte bezüglich horizontaler und vertikaler Linienführung und trägt auch die Informationen bezüglich Überhöhung."
+        },
+        {
+            "type": "paragraph",
+            "content": "In den Prozessen wird der Gleisrost oft als Einheit betrachtet. Einerseits bei der Planung in Projekten, andererseits auch bei zahlreichen Massnahmen der Oberbauerneuerung."
+        },
+        {
+            "type": "paragraph",
+            "content": "Ein Gleisrost kann aus nachstehenden Objekttypen bestehen – muss aber nicht zwingend alle haben:"
+        },
+        {
+            "type": "itemization",
+            "content": [
+                "Fahrschiene",
+                "Schienenbefestigung",
+                "Schwellen gemäss OTK",
+                "Schienenstösse gemäss OTK",
+                "Weitere Objekte gemäss OTK"
+            ]
+        }
+    ],
+    "imageId": "e6c4ed25-ffb2-4bd3-b8d9-e2cc4de3bc64",
+    "creationTimestamp": "2025-01-31T10:09:20.752Z",
+    "componentRelationships": [
+        {
+            "id": "OBJ_FB_23",
+            "name": "Schienenstütze"
+        },
+        {
+            "id": "OBJ_FB_13",
+            "name": "Schienenstoss verlascht"
+        },
+        {
+            "id": "OBJ_FB_27",
+            "name": "Wanderschutzklemme"
+        },
+        {
+            "id": "OBJ_FB_26",
+            "name": "Schwellenkappen"
+        },
+        {
+            "id": "OBJ_FB_14",
+            "name": "Schienenstoss verschweisst"
+        },
+        {
+            "id": "OBJ_FB_6",
+            "name": "Radlenker"
+        },
+        {
+            "id": "OBJ_FB_16",
+            "name": "Schienenstoss nicht isoliert mit Lasche"
+        },
+        {
+            "id": "OBJ_FB_24",
+            "name": "Normalschwelle"
+        },
+        {
+            "id": "OBJ_FB_15",
+            "name": "Schienenstoss isoliert mit Lasche"
+        },
+        {
+            "id": "OBJ_FB_25",
+            "name": "Hohlschwelle"
+        },
+        {
+            "id": "OBJ_FB_17",
+            "name": "Zahnstange"
+        },
+        {
+            "id": "OBJ_FB_19",
+            "name": "Schienenbefestigung"
+        },
+        {
+            "id": "OBJ_FB_4",
+            "name": "Fahrschiene"
+        },
+        {
+            "id": "OBJ_FB_18",
+            "name": "Schmieranlage"
+        },
+        {
+            "id": "OBJ_FB_11",
+            "name": "Schienenstoss isoliert"
+        },
+        {
+            "id": "OBJ_FB_28",
+            "name": "Verstärkung Gleisrost"
+        },
+        {
+            "id": "OBJ_FB_5",
+            "name": "Fangschiene"
+        }
+    ],
+    "assemblyRelationships": [],
+    "releaseHistory": [
+        {
+            "versionId": "13.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "14.0.0",
+            "isIncluded": true
+        },
+        {
+            "versionId": "15.0.0",
+            "isIncluded": true
+        }
+    ],
+    "siaPhaseScopes": [
+        {
+            "phaseRange": "21",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "22",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "31",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "32",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "33",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "41",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "51",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "52",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "53",
+            "isInScope": true
+        }
+    ],
+    "ifcAssignments": [
+        {
+            "version": "IFC2x3",
+            "ifcClass": "IfcElementAssembly",
+            "ifcType": "",
+            "ifcPredefinedType": "USERDEFINED"
+        },
+        {
+            "version": "IFC4",
+            "ifcClass": "IfcElementAssembly",
+            "ifcType": "IfcElementAssemblyType",
+            "ifcPredefinedType": "USERDEFINED"
+        },
+        {
+            "version": "IFC4x3_ADD2",
+            "ifcClass": "IfcElementAssembly",
+            "ifcType": "IfcElementAssemblyType",
+            "ifcPredefinedType": "TRACKPANEL"
+        }
+    ],
+    "ebkpConcepts": [
+        {
+            "id": "R 3.4",
+            "name": "Feste Fahrbahn"
+        }
+    ],
+    "domainModels": [
+        {
+            "id": "RWT",
+            "name": "Fahrbahn"
+        }
+    ],
+    "propertySets": [
+        {
+            "id": "PST_459007",
+            "name": "OBJ_FB_1_LO",
+            "properties": [
+                {
+                    "id": "PTY_380307",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Schwellenabstand",
+                    "unit": "",
+                    "description": "Der zugrundeliegende Abstand der einzelnen Schwellen",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380308",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Kurvenerweiterung",
+                    "unit": "",
+                    "description": "Kurvenerweiterung von - bis",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380309",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Boolean"
+                    },
+                    "name": "Zugang für Fahrzeuge",
+                    "unit": "",
+                    "description": "Noch zugänglich für Fahrzeuge (ja/nein)",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459013",
+            "name": "OBJ_FB_1_PO",
+            "properties": [
+                {
+                    "id": "PTY_380321",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_458977",
+                        "name": "Überwucherungs-Typ"
+                    },
+                    "name": "Typ der Überwucherung",
+                    "unit": "",
+                    "description": "Überwucherung, welche den Gleisrost überdeckt. Bsp.: Dreck, Sand, Gras, Büsche, Bäume, Steine",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459015",
+            "name": "OBJ_FB_1_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_380323",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Spurbreite",
+                    "unit": "",
+                    "description": "Basis-Spurbreite der Fahrbahn",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459210",
+            "name": "SBB-CFF-FFS_LO",
+            "properties": [
+                {
+                    "id": "PTY_380660",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "eBKP-Position",
+                    "unit": "",
+                    "description": "eBKP-Position des Objekttypen bis auf die zweite Stufe des eBKP (eBKP-Element)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380661",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Kennzeichnung",
+                    "unit": "",
+                    "description": "Primäre Kennzeichnung der Anlage (AKS)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_417692",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Die Bezeichnung des Anlagenobjektes wird durch die Anlagengattungen definiert und soll automatisiert erfolgen.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459211",
+            "name": "SBB-CFF-FFS_PO",
+            "properties": [
+                {
+                    "id": "PTY_380662",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Charge",
+                    "unit": "",
+                    "description": "Die Chargennummer liefert weitere Informationen zur Charge und wird für die durchgehende Rückverfolgbarkeit benötigt._x000D_\r\nCharge wird über den Hersteller bereitgestellt",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380663",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Einbaudatum",
+                    "unit": "",
+                    "description": "Das Datum (tagesgenau), an dem das physische Objekt an seinem derzeitigen Ort eingebaut wurde.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380664",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Garant",
+                    "unit": "",
+                    "description": "Hersteller, Lieferant oder Verkäufer welcher die Garantieleistungen erbringt, bis das entsprechende Produkt frei von Mängeln ist.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380665",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Anfang",
+                    "unit": "",
+                    "description": "Anfangsdatum des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380666",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 2-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 2-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380667",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 5-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 5-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380668",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Genauigkeit der Verortung",
+                    "unit": "cm",
+                    "description": "Maximale Abweichung der geografischen Lage oder der Ausdehnung des physischen Anlagenobjekts gegenüber der Realität in Zentimeter.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459212",
+            "name": "SBB-CFF-FFS_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_380669",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "SBB-Artikelnummer",
+                    "unit": "",
+                    "description": "ID zum Materialstammsatz (SBB intern) / darf Wert \"NA\" enthalten",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459213",
+            "name": "SBB-CFF-FFS",
+            "properties": [
+                {
+                    "id": "PTY_380678",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeID",
+                    "unit": "",
+                    "description": "Objekttyp ID gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380679",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeName",
+                    "unit": "",
+                    "description": "Name des Objekttypen gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380680",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459214",
+                        "name": "ObjectStatusProject"
+                    },
+                    "name": "ObjectStatusProject",
+                    "unit": "",
+                    "description": "Objektstatus des Objekttypen im Projekt",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459215",
+            "name": "SBB-CFF-FFS_Lineare-Gleistrassierung",
+            "properties": [
+                {
+                    "id": "PTY_380686",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anfang_Gleiskante-ID",
+                    "unit": "",
+                    "description": "Gleiskante = Gleisachse\r\nDie Gleiskante-ID ist die Bezeichnung der jeweiligen Gleiskante (Gleisachse). Sie wird als Grundlage für das Projekt geliefert.\r\n\r\nBezeichnungsschema: BAA 78.Left > LITT 41.Right",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380687",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Anfang_Stationierung",
+                    "unit": "m",
+                    "description": "Angabe des Stationierungswertes auf der Gleiskante (Gleisachse) in \"m\".\r\nDer Stationierungswert ist mit einer Genauigkeit von vier Nachkommastellen anzugeben.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380688",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Ende_Gleiskante-ID",
+                    "unit": "",
+                    "description": "Gleiskante = Gleisachse_x000D_\r\nDie Gleiskante-ID ist die Bezeichnung der jeweiligen Gleiskante (Gleisachse). Sie wird als Grundlage für das Projekt geliefert._x000D_\r\n_x000D_\r\nBezeichnungsschema: BAA 78.Left > LITT 41.Right_x000D_\r\nDer Wert kann identisch mit dem Wert von \"Anfang_Gleiskante-ID\" sein.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380689",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Ende_Stationierung",
+                    "unit": "m",
+                    "description": "Angabe des Stationierungswertes auf der Gleiskante (Gleisachse) in \"m\".\r\nDer Stationierungswert ist mit einer Genauigkeit von vier Nachkommastellen anzugeben.\r\nDer Wert kann identisch mit Wert in \"Anfang_Stationierung\" sein.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380690",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anfang_Strecke-ID",
+                    "unit": "",
+                    "description": "Strecke = Linie_x000D_\r\nDie Strecke-ID ist die Bezeichnung der jeweiligen Strecke (Linie). Sie wird als Grundlage für das Projekt geliefert._x000D_\r\nBezeichnungsschema: BAA - BAAN",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380691",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Ende_Strecke-ID",
+                    "unit": "",
+                    "description": "Strecke = Linie_x000D_\r\nDie Strecke-ID ist die Bezeichnung der jeweiligen Strecke (Linie). Sie wird als Grundlage für das Projekt geliefert._x000D_\r\nBezeichnungsschema: BAA - BAAN_x000D_\r\nDer Wert kann identisch mit dem Wert von \"Anfang_Strecke-ID\" sein.",
+                    "example": ""
+                }
+            ]
+        }
+    ],
+    "referencedEnumerations": [
+        {
+            "id": "ENM_458977",
+            "name": "Überwucherungs-Typ",
+            "values": [
+                {
+                    "designation": "Dreck",
+                    "description": ""
+                },
+                {
+                    "designation": "Gras",
+                    "description": ""
+                },
+                {
+                    "designation": "Sand",
+                    "description": ""
+                },
+                {
+                    "designation": "Stein",
+                    "description": ""
+                },
+                {
+                    "designation": "Bäume",
+                    "description": ""
+                },
+                {
+                    "designation": "Gebüsch",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459214",
+            "name": "ObjectStatusProject",
+            "values": [
+                {
+                    "designation": "Temporär",
+                    "description": ""
+                },
+                {
+                    "designation": "Bestand",
+                    "description": ""
+                },
+                {
+                    "designation": "Abbruch",
+                    "description": ""
+                },
+                {
+                    "designation": "Neubau",
+                    "description": ""
+                },
+                {
+                    "designation": "Modifiziert",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}
