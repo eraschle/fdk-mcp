@@ -1,6 +1,6 @@
 [project]
 name = "fdk-mcp"
-version = "0.1.0"
+version = "1.0.1"
 description = "MCP server for querying the FDK (Fachdatenkonzept) catalog"
 readme = "README.md"
 requires-python = ">=3.13"
