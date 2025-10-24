@@ -1,0 +1,264 @@
+{
+  "objects_list_response": {
+    "count": 1687,
+    "summaries": [
+      {
+        "id": "OBJ_BR_1",
+        "name": "Brücke Überbau Platte",
+        "domainName": "Brücken",
+        "domainSequence": 1,
+        "sequenceObjectGroup": 1,
+        "domainModel": [
+          {
+            "id": "DM_BR_1",
+            "name": "Brückenmodell Standard"
+          }
+        ],
+        "nameObjectGroup": "Überbauten",
+        "nameSubgroup": "Platten",
+        "imageId": "IMG_BR_001",
+        "ifcClassAssignments": [
+          {
+            "version": "4",
+            "ifcClass": "IfcBridge"
+          }
+        ]
+      },
+      {
+        "id": "OBJ_EN_1",
+        "name": "Energieversorgung Hauptleitung",
+        "domainName": "Energie",
+        "domainSequence": 2,
+        "sequenceObjectGroup": 1,
+        "domainModel": [
+          {
+            "id": "DM_EN_1",
+            "name": "Energiemodell Standard"
+          }
+        ],
+        "nameObjectGroup": "Leitungen",
+        "nameSubgroup": "Hauptleitungen",
+        "imageId": "IMG_EN_001",
+        "ifcClassAssignments": [
+          {
+            "version": "4",
+            "ifcClass": "IfcCableSegment"
+          }
+        ]
+      },
+      {
+        "id": "OBJ_HB_1",
+        "name": "Hochbau Wand Tragend",
+        "domainName": "Hochbau",
+        "domainSequence": 3,
+        "sequenceObjectGroup": 1,
+        "domainModel": [
+          {
+            "id": "DM_HB_1",
+            "name": "Hochbaumodell Standard"
+          }
+        ],
+        "nameObjectGroup": "Wände",
+        "nameSubgroup": "Tragende Wände",
+        "imageId": "IMG_HB_001",
+        "ifcClassAssignments": [
+          {
+            "version": "4",
+            "ifcClass": "IfcWall"
+          }
+        ]
+      }
+    ],
+    "release": {
+      "name": "v2024.1",
+      "date": "2024-01-15"
+    }
+  },
+  "object_detail_response": {
+    "id": "OBJ_BR_1",
+    "name": "Brücke Überbau Platte",
+    "domainName": "Brücken",
+    "imageId": "IMG_BR_001",
+    "description": "Eine tragende Platte als Überbaukonstruktion für Brücken. Die Platte nimmt die Verkehrslasten auf und leitet sie an die Unterkonstruktion weiter.",
+    "structuredDescription": [
+      {
+        "type": "heading",
+        "level": 2,
+        "content": "Beschreibung"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tragender Überbau aus Stahlbeton oder Spannbeton."
+      }
+    ],
+    "aksCode": "AKS_BR_001",
+    "creationTimestamp": "2024-01-15T10:30:00Z",
+    "componentRelationships": [
+      {
+        "id": "REL_1",
+        "type": "hasComponent",
+        "targetId": "OBJ_BR_2"
+      }
+    ],
+    "assemblyRelationships": [
+      {
+        "id": "REL_2",
+        "type": "partOf",
+        "targetId": "OBJ_BR_0"
+      }
+    ],
+    "releaseHistory": [
+      {
+        "version": "v2024.1",
+        "date": "2024-01-15",
+        "changes": "Initiale Version"
+      }
+    ],
+    "siaPhaseScopes": [
+      {
+        "phase": "31",
+        "scope": "Ausführungsprojekt"
+      }
+    ],
+    "ifcAssignments": [
+      {
+        "version": "4",
+        "class": "IfcBridge"
+      }
+    ],
+    "ebkpConcepts": [
+      {
+        "code": "C21.1",
+        "name": "Brückenüberbau"
+      }
+    ],
+    "domainModels": [
+      {
+        "id": "DM_BR_1",
+        "name": "Brückenmodell Standard"
+      }
+    ],
+    "propertySets": [
+      {
+        "id": "PS_GEOM_1",
+        "name": "Geometrie",
+        "properties": [
+          {
+            "id": "PROP_BREITE",
+            "format": {
+              "type": "Number",
+              "fdkId": null,
+              "name": "Number"
+            },
+            "name": "Breite",
+            "unit": "m",
+            "description": "Gesamtbreite der Platte in Metern",
+            "example": "10.5"
+          },
+          {
+            "id": "PROP_LAENGE",
+            "format": {
+              "type": "Number",
+              "fdkId": null,
+              "name": "Number"
+            },
+            "name": "Länge",
+            "unit": "m",
+            "description": "Gesamtlänge der Platte in Metern",
+            "example": "45.0"
+          },
+          {
+            "id": "PROP_DICKE",
+            "format": {
+              "type": "Number",
+              "fdkId": null,
+              "name": "Number"
+            },
+            "name": "Dicke",
+            "unit": "m",
+            "description": "Plattendicke in Metern",
+            "example": "0.8"
+          }
+        ]
+      },
+      {
+        "id": "PS_MAT_1",
+        "name": "Material",
+        "properties": [
+          {
+            "id": "PROP_MATERIAL",
+            "format": {
+              "type": "Enumeration",
+              "fdkId": "ENUM_MAT_001",
+              "name": "MaterialType"
+            },
+            "name": "Material",
+            "unit": "",
+            "description": "Hauptmaterial der Platte",
+            "example": "Stahlbeton C30/37"
+          },
+          {
+            "id": "PROP_FESTIGKEIT",
+            "format": {
+              "type": "String",
+              "fdkId": null,
+              "name": "String"
+            },
+            "name": "Festigkeitsklasse",
+            "unit": "",
+            "description": "Festigkeitsklasse des Betons",
+            "example": "C30/37"
+          }
+        ]
+      },
+      {
+        "id": "PS_TECH_1",
+        "name": "Technische Daten",
+        "properties": [
+          {
+            "id": "PROP_TRAGLAST",
+            "format": {
+              "type": "Number",
+              "fdkId": null,
+              "name": "Number"
+            },
+            "name": "Traglast",
+            "unit": "kN/m²",
+            "description": "Maximale Traglast pro Quadratmeter",
+            "example": "75.0"
+          }
+        ]
+      }
+    ],
+    "referencedEnumerations": [
+      {
+        "id": "ENUM_MAT_001",
+        "name": "MaterialType",
+        "values": [
+          "Stahlbeton",
+          "Spannbeton",
+          "Stahl"
+        ]
+      }
+    ]
+  },
+  "object_detail_minimal": {
+    "id": "OBJ_EN_1",
+    "name": "Energieversorgung Hauptleitung",
+    "domainName": "Energie",
+    "imageId": "IMG_EN_001",
+    "description": "Hauptleitung für Energieversorgung",
+    "structuredDescription": [],
+    "aksCode": "AKS_EN_001",
+    "creationTimestamp": "2024-01-15T11:00:00Z",
+    "componentRelationships": [],
+    "assemblyRelationships": [],
+    "releaseHistory": [],
+    "siaPhaseScopes": [],
+    "ifcAssignments": [],
+    "ebkpConcepts": [],
+    "domainModels": [],
+    "propertySets": [],
+    "referencedEnumerations": []
+  }
+}

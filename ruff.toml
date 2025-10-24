@@ -1,0 +1,45 @@
+# Ruff Configuration für SBB FDK MCP
+# https://docs.astral.sh/ruff/configuration/
+
+target-version = "py313"
+line-length = 120
+
+exclude = [".venv", "__pycache__", "*.pyc", ".git", "cache", "*.egg-info"]
+
+# Enable Pyflakes (`F`) and pycodestyle (`E`, `W`) codes by default
+# Plus: isort (I), pep8-naming (N), pyupgrade (UP), flake8-bugbear (B),
+#       flake8-comprehensions (C4), flake8-simplify (SIM)
+lint.select = ["E", "F", "I", "N", "UP", "B", "C4", "SIM", "W"]
+
+lint.ignore = [
+    "E501",   # Line too long (handled by formatter)
+    "SIM102", # Nested if statements
+]
+
+# Allow fix for all enabled rules (when `--fix` is provided)
+lint.fixable = ["ALL"]
+lint.unfixable = []
+
+# Allow unused variables when underscore-prefixed
+lint.dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"] # Allow unused imports in __init__.py
+
+[lint.isort]
+known-first-party = ["fdk_mcp"]
+force-single-line = false
+split-on-trailing-comma = true
+lines-after-imports = 2
+
+[lint.mccabe]
+max-complexity = 10
+
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"

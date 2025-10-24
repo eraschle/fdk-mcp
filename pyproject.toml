@@ -1,0 +1,41 @@
+[project]
+name = "fdk-mcp"
+version = "0.1.0"
+description = "MCP server for querying the FDK (Fachdatenkonzept) catalog"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.18.0",
+    "pydantic>=2.12.3",
+]
+
+[project.scripts]
+fdk-mcp = "fdk_mcp.__main__:main"
+
+[tool.uv]
+package = true
+dev-dependencies = [
+    "pyright>=1.1.406",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.14.0",
+    "ruff>=0.14.1",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["tests/*", "**/__pycache__/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+precision = 2
+show_missing = true

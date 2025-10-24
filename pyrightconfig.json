@@ -1,0 +1,62 @@
+{
+  "include": [
+    "src",
+    "tests"
+  ],
+  "extraPath": [
+    "src",
+    "tests"
+  ],
+  "exclude": [
+    ".venv",
+    "**/node_modules",
+    "**/build/**",
+    "**/dist/**",
+    "**/.venv/**",
+    "**/.ruff_cache/**",
+    "**/__pycache__",
+    "**/*.pyc",
+    ".git",
+    "**/cache",
+    "src/typestubs"
+  ],
+  "ignore": [ ],
+  "defineConstant": {
+    "DEBUG": true
+  },
+  "pythonVersion": "3.13",
+  "pythonPlatform": "All",
+  "typeCheckingMode": "standard",
+  "diagnosticMode": "workspace",
+  "analyzeUnannotatedFunctions": true,
+  "enableTypeIgnoreComments": true,
+  "reportAssertAlwaysTrue": true,
+  "reportDuplicateImport": true,
+  "reportFunctionMemberAccess": true,
+  "reportGeneralTypeIssues": true,
+  "reportImplicitStringConcatenation": false,
+  "reportInvalidStringEscapeSequence": true,
+  "reportInvalidTypeForm": true,
+  "reportMissingImports": "error",
+  "reportMissingModuleSource": true,
+  "reportMissingTypeStubs": true,
+  "reportPropertyTypeMismatch": true,
+  "reportSelfClsParameterName": true,
+  "reportUnboundVariable": true,
+  "reportUndefinedVariable": true,
+  "reportUnknownArgumentType": false,
+  "reportUnknownMemberType": false,
+  "reportUnknownVariableType": false,
+  "reportUnnecessaryCast": true,
+  "reportUnnecessaryComparison": true,
+  "reportUnnecessaryContains": true,
+  "reportUnnecessaryTypeIgnoreComment": true,
+  "reportUnusedClass": true,
+  "reportUnusedFunction": true,
+  "reportUnusedImport": true,
+  "reportUnusedVariable": true,
+  "strictDictionaryInference": true,
+  "strictListInference": true,
+  "strictParameterNoneValue": true,
+  "strictSetInference": true
+}
